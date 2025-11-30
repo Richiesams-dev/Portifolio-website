@@ -8,16 +8,22 @@
     <meta name="description" content="Richmans Portfolio Website">
     <meta name="author" content="Richman Bibowei Fedidel">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="skin-color/color-1.css">
+    <!-- <link rel="stylesheet" href="skin-color/color-1.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- ==== Style Switcher Start ==== -->
-    <link rel="stylesheet" href="skin-color/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="skin-color/color-1.css" class="alternate-style" title="color-1">
     <link rel="stylesheet" href="skin-color/color-2.css" class="alternate-style" title="color-2" disabled>
     <link rel="stylesheet" href="skin-color/color-3.css" class="alternate-style" title="color-3" disabled>
     <link rel="stylesheet" href="skin-color/color-4.css" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="skin-color/color-5.css" class="alternate-style" title="color-5" disabled>
 
     <link rel="stylesheet" href="style-switcher.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="js/script.js" defer></script>
+    <script src="js/style-switcher.js" defer></script>
+
+    <link rel="icon" href="image/portfolio-icon.png">
     <title>Richmans Portifolio</title>
 </head>
 
@@ -26,17 +32,17 @@
     <div class="main-container">
         <!-- ==== Aside Start ==== -->
         <aside class="aside">
-            <div class="logo">
-                <a href="#"><span>R</span>ichiesams</a>
-            </div>
             <div class="nav-toggler">
                 <span></span>
+            </div>
+            <div class="logo">
+                <a href="#home"><span>R</span>ichiesams</a>
             </div>
             <ul class="nav">
                 <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
                 <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
                 <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#portifolio"><i class="fa fa-briefcase"></i>Portifolio</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
                 <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
         </aside>
@@ -57,10 +63,10 @@
                                 compelling and high-converting digital experiences.
                                 From sleek layouts to engaging graphics, I focus on designs that not only captivate but
                                 also drive results.</p>
-                            <a href="@contact" class="btn hire-me">Hire Me</a>
+                            <a href="#contact" class="btn hire-me">Hire Me</a>
                         </div>
                         <div class="home-img padd-15">
-                            <img src="image/profile.jpg" alt="profile-pics">
+                            <img src="image/richie-profile-pics1.png" alt="profile-pics">
                         </div>
                     </div>
                 </div>
@@ -85,9 +91,8 @@
                                         I've worked on a few school and personal projects, including a water rafting
                                         webpage using HTML and CSS,
                                         an adventure game built with Python, and a personal portfolio site using HTML,
-                                        CSS, and JavaScript.
-
-                                        I'm really passionate about web development and constantly looking to improve my
+                                        CSS, and JavaScript.</p>
+                                    <p>I'm really passionate about web development and constantly looking to improve my
                                         skills.
                                         and apply what I've learned, gain hands-on experience,
                                         and grow as a developer by working on real-world projects with a professional
@@ -105,7 +110,7 @@
                                             <p>Age : <span>27</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Website : <span>richiesams-dev.github.io/Portifolio-website</span></p>
+                                            <p>Website : <span>richiesams-dev.github.io/Portfolio-website</span></p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>Email : <span>richmanbibowei@gmail.com</span></p>
@@ -122,8 +127,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="https://drive.google.com/uc?export=download&id=FILE_ID"
-                                                class="btn">Download CV</a>
+                                            <a href="#" class="btn" id="download-cv-btn">Download CV</a>
                                             <a href="#contact" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
@@ -133,22 +137,29 @@
                                         <div class="skill-item padd-15">
                                             <h5>JS</h5>
                                             <div class="progress">
-                                                <div class="progress-in js-progress"></div>
+                                                <div class="progress-in" style="width: 86%"></div>
                                                 <div class="skill-percent">86%</div>
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
                                             <h5>HTML</h5>
                                             <div class="progress">
-                                                <div class="progress-in html-progress"></div>
+                                                <div class="progress-in" style="width: 96%"></div>
                                                 <div class="skill-percent">96%</div>
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
                                             <h5>Boot Strap</h5>
                                             <div class="progress">
-                                                <div class="progress-in bootstrap-progress"></div>
+                                                <div class="progress-in" style="width: 76%"></div>
                                                 <div class="skill-percent">76%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>CSS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 90%"></div>
+                                                <div class="skill-percent">90%</div>
                                             </div>
                                         </div>
                                     </div>
@@ -160,7 +171,6 @@
                                     <div class="row">
                                         <div class="timeline-box padd-15">
                                             <div class="timeline shadow-dark">
-                                                <!-- ==== timeline item ==== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
@@ -182,7 +192,6 @@
                                     <div class="row">
                                         <div class="timeline-box padd-15">
                                             <div class="timeline shadow-dark">
-                                                <!-- ==== timeline item ==== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
@@ -198,7 +207,6 @@
                                                         the sales floor.
                                                     </p>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
@@ -219,85 +227,73 @@
                         </div>
                     </div>
                     <div class="row">
-                        <!-- ==== Service Item Start ==== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-mobile-alt"></i>
-                                </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nam deserunt illum?</p>
-                            </div>
-                        </div>
-                        <!-- ==== Service Item End ==== -->
-
-                        <!-- ==== Service Item Start ==== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-laptop-code"></i>
                                 </div>
                                 <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nam deserunt illum?</p>
+                                <p>Creating visually appealing and user-friendly website designs that provide excellent
+                                    user experience across all devices.</p>
                             </div>
                         </div>
-                        <!-- ==== Service Item End ==== -->
-
-                        <!-- ==== Service Item Start ==== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-palette"></i>
-                                </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nam deserunt illum?</p>
-                            </div>
-                        </div>
-                        <!-- ==== Service Item End ==== -->
-
-                        <!-- ==== Service Item Start ==== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-code"></i>
                                 </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nam deserunt illum?</p>
+                                <h4>Web Development</h4>
+                                <p>Building responsive and functional websites using modern technologies like HTML, CSS,
+                                    JavaScript, and frameworks.</p>
                             </div>
                         </div>
-                        <!-- ==== Service Item End ==== -->
-
-                        <!-- ==== Service Item Start ==== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>Graphic Design</h4>
+                                <p>Designing compelling visual content including logos, banners, and marketing materials
+                                    that communicate your brand effectively.</p>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Responsive Design</h4>
+                                <p>Ensuring websites look and function perfectly on all devices from desktop computers
+                                    to mobile phones.</p>
+                            </div>
+                        </div>
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-search"></i>
                                 </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nam deserunt illum?</p>
+                                <h4>SEO Optimization</h4>
+                                <p>Improving website visibility on search engines through technical optimization and
+                                    content strategy.</p>
                             </div>
                         </div>
-                        <!-- ==== Service Item End ==== -->
-
-                        <!-- ==== Service Item Start ==== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-bullhorn"></i>
                                 </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nam deserunt illum?</p>
+                                <h4>Digital Marketing</h4>
+                                <p>Promoting brands and products through various digital channels to reach and engage
+                                    target audiences.</p>
                             </div>
                         </div>
-                        <!-- ==== Service Item End ==== -->
-
                     </div>
                 </div>
             </section>
             <!-- ==== Services Section End ==== -->
 
             <!-- ==== Portfolio Section Start ==== -->
-            <section class="portfolio section" id="portifolio">
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -306,107 +302,19 @@
                     </div>
                     <div class="row">
                         <div class="portfolio-heading padd-15">
-                            <h2>My Last Projects:</h2>
+                            <h2>My Projects:</h2>
                         </div>
                     </div>
-                    <div class="row" id="row">
-                        <!-- ==== Portfolio Item Start ==== -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="image/rafting-homepage.png" alt="projects">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h3>Rafting Website</h3>
-                                    <p>built with HTML, CSS and JavaScript</p>
-                                    <div class="tech-tags">
-                                        <span class="tag">HTML</span>
-                                        <span class="tag">CSS</span>
-                                        <span class="tag">JavaScript</span>
-                                    </div>
-                                    <div class="portfolio-item-btn">
-                                        <a href="https://richiesams-dev.github.io/wdd130/wwr/" class="btn">View
-                                            Project</a>
-                                        <a href="https://github.com/Richiesams-dev/wdd130/blob/main/wwr/index.html"
-                                            class="btn">Check Out My Code</a>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="row">
+                        <div class="portfolio-filters padd-15">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="web">Web</button>
+                            <button class="filter-btn" data-filter="desktop">Desktop</button>
+                            <button class="filter-btn" data-filter="featured">Featured</button>
                         </div>
-                        <!-- ==== Portfolio Item End ==== -->
-
-                        <!-- ==== Portfolio Item Start ==== -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="image/delight-bakery-homepage.png" alt="projects">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h3>Delight Bakery</h3>
-                                    <p>built with HTML, CSS and JavaScript</p>
-                                    <div class="tech-tags">
-                                        <span class="tag">HTML</span>
-                                        <span class="tag">CSS</span>
-                                        <span class="tag">JavaScript</span>
-                                    </div>
-                                    <div class="portfolio-item-btn">
-                                        <a href="https://richiesams-dev.github.io/wdd131/delight-bakery-project/delight-home.html"
-                                            class="btn">View
-                                            Project</a>
-                                        <a href="https://github.com/Richiesams-dev/wdd131/tree/main/delight-bakery-project"
-                                            class="btn">Check Out My Code</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ==== Portfolio Item End ==== -->
-
-                        <!-- ==== Portfolio Item Start ==== -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="image/graphic-project.jpeg" alt="projects">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h3>Rafting Website</h3>
-                                    <p>built with HTML, CSS and JavaScript</p>
-                                    <div class="tech-tags">
-                                        <span class="tag">HTML</span>
-                                        <span class="tag">CSS</span>
-                                        <span class="tag">JavaScript</span>
-                                    </div>
-                                    <div class="portfolio-item-btn">
-                                        <a href="https://richiesams-dev.github.io/wdd130/wwr/" class="btn">View
-                                            Project</a>
-                                        <a href="https://github.com/Richiesams-dev/wdd130/blob/main/wwr/index.html"
-                                            class="btn">Check Out My Code</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="image/graphic-project.jpeg" alt="projects">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h3>Rafting Website</h3>
-                                    <p>built with HTML, CSS and JavaScript</p>
-                                    <div class="tech-tags">
-                                        <span class="tag">HTML</span>
-                                        <span class="tag">CSS</span>
-                                        <span class="tag">JavaScript</span>
-                                    </div>
-                                    <div class="portfolio-item-btn">
-                                        <a href="https://richiesams-dev.github.io/wdd130/wwr/" class="btn">View
-                                            Project</a>
-                                        <a href="https://github.com/Richiesams-dev/wdd130/blob/main/wwr/index.html"
-                                            class="btn">Check Out My Code</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ==== Portfolio Item End ==== -->
+                    </div>
+                    <div class="row" id="portfolio-container">
+                        <!-- Portfolio items will be dynamically inserted here -->
                     </div>
                 </div>
             </section>
@@ -423,91 +331,81 @@
                     <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
                     <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
                     <div class="row">
-                        <!-- ==== Contact Info Item Start ==== -->
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-phone"></i></div>
                             <h4>Call Us On</h4>
-                            <p>+234 91520350</p>
+                            <p>+234 9152035350</p>
                         </div>
-                        <!-- ==== Contact Info Item End ==== -->
-
-                        <!-- ==== Contact Info Item Start ==== -->
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
                             <h4>Office</h4>
-                            <p>Adesuwa</p>
+                            <p>Benin City</p>
                         </div>
-                        <!-- ==== Contact Info Item End ==== -->
-
-                        <!-- ==== Contact Info Item Start ==== -->
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-envelope"></i></div>
                             <h4>Email</h4>
                             <p>richmanbibowei@gmail.com</p>
                         </div>
-                        <!-- ==== Contact Info Item End ==== -->
-
-                        <!-- ==== Contact Info Item Start ==== -->
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-globe-europe"></i></div>
                             <h4>Website</h4>
                             <p><a
-                                    href="https://richiesams-dev.github.io/Portifolio-website/">richiesams-dev.github.io/Portifolio-website</a>
+                                    href="https://richiesams-dev.github.io/Portfolio-website/">richiesams-dev.github.io</a>
                             </p>
                         </div>
-                        <!-- ==== Contact Info Item End ==== -->
                     </div>
                     <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
                     <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
-                    <!-- ==== Contact Form ==== -->
                     <div class="row">
                         <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                            <form id="contact-form" action="https://formspree.io/f/mjkzbqkb" method="POST">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name" id="name"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email" id="email"
+                                                required>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Subject" id="subject"
+                                                required>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="subject">
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" placeholder="Message"
+                                                id="message" rows="10" required></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="textarea" class="form-control" placeholder="message"
-                                            rows="10"></textarea>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <button type="submit" class="btn" id="send-message-btn">Send Message</button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn">Send Message</button>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- ==== Contact Section End ==== -->
         </div>
-
-
+        <!-- ==== Main Content End ==== -->
     </div>
-    <!-- ==== Main Content End ==== -->
-
     <!-- ==== Main Container End ==== -->
 
-    <!-- ==== Style Switcher Start ==== -->
+    <!-- Style Switcher -->
     <div class="style-switcher">
         <div class="style-switcher-toggler s-icon">
             <i class="fas fa-cog fa-spin"></i>
@@ -524,10 +422,30 @@
             <span class="color-5" onclick="setActiveStyle('color-5')"></span>
         </div>
     </div>
-    <!-- ==== Style Switcher End ==== -->
 
-    <!-- ==== Js Files ==== -->
-    <script src="js/style-switcher.js"></script>
+    <!-- Download CV Modal -->
+    <div class="modal" id="download-cv-modal">
+        <div class="modal-content">
+            <h3>Download CV</h3>
+            <p>Would you like to download my CV in PDF format?</p>
+            <div class="modal-buttons">
+                <button class="modal-btn primary" id="download-pdf-btn">Download PDF</button>
+                <button class="modal-btn secondary" id="close-cv-modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Sent Modal -->
+    <div class="modal" id="message-sent-modal">
+        <div class="modal-content">
+            <h3>Message Sent!</h3>
+            <p>Thank you for your message. I'll get back to you as soon as possible.</p>
+            <div class="modal-buttons">
+                <button class="modal-btn primary" id="close-message-modal">OK</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
