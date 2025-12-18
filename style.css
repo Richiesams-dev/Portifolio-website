@@ -1042,6 +1042,8 @@ h3.my-profession {
 @media (max-width: 1199px) {
   .aside {
     left: -270px;
+    /* top: -270px;
+    flex-direction: column; */
   }
   .main-content {
     padding-left: 0;
@@ -1055,9 +1057,11 @@ h3.my-profession {
     left: 15px;
   }
   .aside.open {
+    /* top: 0; */
     left: 0;
   }
   .main-content.open {
+    /* padding-top: 270px; */
     padding-left: 270px;
   }
   .style-switcher {

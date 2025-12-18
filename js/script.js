@@ -35,7 +35,7 @@ const projects = [
     description:
       "A home page for a web development course showcasing various projects and assignments.",
     photo_url:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTGZC8-FPvBdLaasy0Oa-Fr3Z5KL1oe-aqoA&s",
     code: "https://github.com/Richiesams-dev/wdd231/blob/main/",
     liveDemo: "https://richiesams-dev.github.io/wdd231/",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -49,7 +49,7 @@ const projects = [
     description:
       "A C# application that helps users track their daily exercises and routines.",
     photo_url:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRritI91vxS8FHdPEe4vaMiLV6GqABROSpgtA&s",
     code: "https://github.com/Richiesams-dev/cse210-hw/blob/main/week07/ExerciseTracking/Program.cs",
     liveDemo: "https://richiesams-dev.github.io/JS_projects/Exercise-Tracker/",
     technologies: ["C#"],
@@ -63,7 +63,7 @@ const projects = [
     description:
       "A Web-based To Do List application that allows users to manage their tasks effectively.",
     photo_url:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVCy92WKGQCJzAnu4RV8vgsLSKkarSeeMgPg&s",
     code: "https://github.com/Richiesams-dev/JS_projects/tree/master/To-do-list",
     liveDemo: "https://richiesams-dev.github.io/JS_projects/To-do-list/",
     technologies: ["JavaScript", "HTML", "CSS"],
@@ -77,7 +77,7 @@ const projects = [
     description:
       "A responsive landing page for a fictional product or service.",
     photo_url:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJbbOHLVirFWacFeFdGoTQpm9d9dfQF7fiw&s",
     code: "https://github.com/Richiesams-dev/JS_projects/tree/master/landing-page",
     liveDemo:
       "https://richiesams-dev.github.io/JS_projects/Landing-page/index.html",
