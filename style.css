@@ -182,8 +182,8 @@ body {
   border: 1px solid var(--bg-black-50);
   cursor: pointer;
   position: fixed;
-  left: 300px;
-  top: 20px;
+  right: 20px;
+  top: 25px;
   display: none;
   align-items: center;
   justify-content: center;
@@ -225,7 +225,7 @@ body {
 }
 
 .aside .nav li {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: block;
 }
 
@@ -260,6 +260,7 @@ body {
   min-height: 100vh;
   display: flex;
   color: var(--text-black-900);
+  text-shadow: #393939;
   align-items: center;
 }
 
@@ -361,6 +362,10 @@ h3.my-profession {
   line-height: 25px;
   color: var(--text-black-700);
   margin-bottom: 20px;
+}
+
+#personal-info-row {
+  display: block;
 }
 
 .about .about-content .personal-info {
@@ -991,7 +996,7 @@ h3.my-profession {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.15;
+    opacity: 0.6;
     z-index: -1;
   }
   
@@ -1015,17 +1020,11 @@ h3.my-profession {
   .home .home-info {
     position: relative;
     z-index: 1;
-    background: rgba(var(--bg-black-900-rgb, 242, 242, 252), 0.85);
     padding: 30px;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
   }
   
-  /* Dark mode support */
-  body.dark .home .home-info {
-    background: rgba(21, 21, 21, 0.85);
-  }
-}
 
 /* Additional enhancement for very small screens */
 @media (max-width: 575px) {
@@ -1042,8 +1041,6 @@ h3.my-profession {
 @media (max-width: 1199px) {
   .aside {
     left: -270px;
-    /* top: -270px;
-    flex-direction: column; */
   }
   .main-content {
     padding-left: 0;
@@ -1054,15 +1051,39 @@ h3.my-profession {
   }
   .aside .nav-toggler {
     display: flex;
+  }
+
+  #style-switcher-toggler {
+    display: none;
+  }
+
+  .aside .logo {
+    display: flex;
+    position: fixed;
+    font-size: 5px;
     left: 15px;
+    top: 10px;
   }
   .aside.open {
-    /* top: 0; */
     left: 0;
+    width: 100%;
+    background: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--bg-black-50);
+    padding: 30px;
+    height: 500px;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
   }
   .main-content.open {
-    /* padding-top: 270px; */
-    padding-left: 270px;
+    padding-left: 0px;
   }
   .style-switcher {
     top: 15px;
